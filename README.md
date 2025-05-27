@@ -18,6 +18,7 @@ The 11 food classes are:
 | Data Source | Description |
 |-------------|-------------|
 | [Food11 (Kaggle)](https://www.kaggle.com/datasets/trolukovich/food11-image-dataset) | 2-way split of training and validation across 11 food categories (testing folder has not been included)|
+| [OneDrive Link ](https://zhaw-my.sharepoint.com/:f:/g/personal/kaeppkev_students_zhaw_ch/EuGvyiCsPtJDkznJr4c8HlsBqKnLvlituIC587wWb3w5QQ) | Since the data set is too large, I've uploaded the entire dataset used for training the model to my personal OneDrive folder. |
 
 ## Data Augmentation
 | Augmentation                     | Description |
