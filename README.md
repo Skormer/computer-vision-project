@@ -36,7 +36,7 @@ The 11 food classes are:
 | Validation | 3430             |
 
 ## Training Setup
-- Model: [google/vit-base-patch16-224]
+- Model: `google/vit-base-patch16-224`
 - Epochs: 5
 - Optimizer: AdamW
 - Learning Rate: 2e-5
@@ -54,7 +54,7 @@ The 11 food classes are:
 | 4     | 0.2861         | 0.1395          | 95.89%               |
 | 5     | 0.2943         | 0.1223          | 96.59%               |
 
-### TensorBoard
+## TensorBoard
 
 Details of training can be found at [Huggingface TensorBoard](https://huggingface.co/Skorm/food11-vit/tensorboard)
 
