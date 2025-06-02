@@ -59,17 +59,28 @@ The 11 food classes are:
 
 Details of training can be found at [Huggingface TensorBoard](https://huggingface.co/Skorm/food11-vit/tensorboard)
 
-//ToDo: Different runs
+| Model/Method                                                         | TensorBoard Link                                      |
+|----------------------------------------------------------------------|------------------------------------------------------|
+| Transfer Learning with `google/vit-base-patch16-224` (without data augmentation) | runs/no_aug_run/events.out.tfevents.174885...                 |
+| Transfer Learning with `google/vit-base-patch16-224` (with data augmentation)  | runs/events.out.tfevents.174835...                |
 
-## 🧪 Zero-Shot Comparison (CLIP)
+![alt text](doc/eval_accuracy.png)
 
-Using `openai/clip-vit-large-patch14`, we tested a few food images with labels such as `"dessert"`, `"soup"`, `"rice"`...
+## 🧪 Comparison of trained model and Zero-Shot model 
 
-| Image         | True Label | CLIP Prediction     | Score |
-|---------------|------------|---------------------|--------|
-| dessert.jpg   | Dessert    | dessert             | 0.78   |
-| noodles.jpeg  | Noodles    | noodles or pasta    | 0.66   |
-| meat.jpg      | Meat       | meat                | 0.83   |
+| Model/Method                                                         | Accuracy | 
+|----------------------------------------------------------------------|----------|
+| Transfer Learning with `google/vit-base-patch16-224` (without data augmentation) | 96.59%  (epoch 5)   | 
+| Transfer Learning with `google/vit-base-patch16-224` (with data augmentation)  | 95.86%  (epoch 5)    | 
+| Zero-shot Image Classification with `openai/clip-vit-large-patch14` by testing with 50 images of each food category | 82.36%%      | 
 
 ## References
 ![Distribution Chart](doc/class_distribution.png)
+
+## Reflection
+
+This project allowed me to apply modern image classification techniques using Vision Transformers (ViT) and explore the full machine learning pipeline with PyTorch Lightning. I learned how to structure and train custom models, how to log and compare different training runs using TensorBoard, and how to deploy models using Gradio and Hugging Face Spaces. 
+
+An additional valuable learning experience was comparing the performance of a fine-tuned ViT model with a zero-shot CLIP model. This highlighted the benefits of domain-specific training versus general-purpose models.
+
+Future improvements could include testing stronger data augmentation techniques, training the model further with a larger dataset and evaluating on a dedicated test set to better understand model generalization.
