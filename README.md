@@ -72,7 +72,7 @@ Details of training can be found at [Huggingface TensorBoard](https://huggingfac
 |----------------------------------------------------------------------|----------|
 | Transfer Learning with `google/vit-base-patch16-224` (without data augmentation) | 96.59%  (epoch 5)   | 
 | Transfer Learning with `google/vit-base-patch16-224` (with data augmentation)  | 95.86%  (epoch 5)    | 
-| Zero-shot Image Classification with `openai/clip-vit-large-patch14` by testing with 50 images of each food category | 82.36%%      | 
+| Zero-shot Image Classification with `openai/clip-vit-large-patch14` by testing with 50 images of each food category | 82.36%      | 
 
 ## References
 ![Distribution Chart](doc/class_distribution.png)
