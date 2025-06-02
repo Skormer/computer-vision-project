@@ -47,7 +47,7 @@ The 11 food classes are:
 
 ### Training Results
 
-| Epoch | Training Loss | Validation Loss | Validation Accuracy |
+| Epoch | Training Loss | Validation Loss | Validation Accuracy | 
 |-------|----------------|-----------------|----------------------|
 | 1     | 1.2517         | 0.1991          | 95.31%               |
 | 2     | 0.4728         | 0.1376          | 96.21%               |
@@ -68,11 +68,11 @@ Details of training can be found at [Huggingface TensorBoard](https://huggingfac
 
 ## 🧪 Comparison of trained model and Zero-Shot model 
 
-| Model/Method                                                         | Accuracy | 
-|----------------------------------------------------------------------|----------|
-| Transfer Learning with `google/vit-base-patch16-224` (without data augmentation) | 96.59%  (epoch 5)   | 
-| Transfer Learning with `google/vit-base-patch16-224` (with data augmentation)  | 95.86%  (epoch 5)    | 
-| Zero-shot Image Classification with `openai/clip-vit-large-patch14` by testing with 50 images of each food category | 82.36%      | 
+| Model/Method                                                         | Accuracy | Precision | Recall |
+|----------------------------------------------------------------------|----------|-----------|-----------|
+| Transfer Learning with `google/vit-base-patch16-224` (without data augmentation) | 96.59%  (epoch 5)   | -         | -      |
+| Transfer Learning with `google/vit-base-patch16-224` (with data augmentation)  | 95.86%  (epoch 5)    | -         | -      |
+| Zero-shot Image Classification with `openai/clip-vit-large-patch14`| 84.00%     | 88.50%     | 84.00%     |
 
 ## References
 ![Distribution Chart](doc/class_distribution.png)
